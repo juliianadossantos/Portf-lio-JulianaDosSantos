@@ -9,12 +9,15 @@
 }
 
 :root{
-  --fundo-principal:  rgb(255, 255, 255);
-  --texto: rgb(20, 20, 25);
-  --texto-inverso: rgb(245, 245, 245);
-  --destaque :rgb(209, 91, 148);
-  --destaque-inverso :rgb(180, 215, 230);
-  --fundo-card : rgb(247, 198, 217);
+  --fundo-principal: rgb(255, 255, 255);        /* Branco */
+
+  --texto: rgb(20, 20, 25);                    /* Preto suave */
+  --texto-inverso: rgb(245, 245, 245);         /* Branco */
+
+  --destaque: rgb(138, 75, 175);               /* Roxo elegante (principal) */
+  --destaque-inverso: rgb(190, 210, 240);      /* Azul pastel tech */
+
+  --fundo-card: rgb(235, 220, 245);            /* Roxo bem clarinho */
 
 }
 
@@ -97,7 +100,7 @@ div#social{
   }
 
   section#ficha{
-    background-color:rgb(255, 250, 240);
+    background-color:var(--fundo-card);
     padding: 20px;
     border-radius: 8px;
     grid-column: 2;
@@ -111,7 +114,7 @@ div#social{
     object-position: 50% 25%; /*ajustando topo depois a parte de baixo,top center não funcionou*/
     overflow: hidden;
     border-radius: 10px;
-    border: 5px solid var(--destaque-inverso);
+    border: 5px solid var(--destaque);
     box-shadow:0 4px 3px rgba(0, 0, 0, 0.436);
     display: block;
     margin: auto;
