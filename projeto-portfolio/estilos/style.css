@@ -1,0 +1,65 @@
+/* 
+  Variáveis para cores:
+  --fundo-principal
+  --texto
+  --texto-inverso
+  --destaque
+  --destaque-inverso
+  --fundo-card
+*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+ 
+  box-sizing: border-box;
+}
+
+:root{
+  --fundo-principal:  rgb(255, 255, 255);
+  --texto: rgb(20, 20, 25);
+  --texto-inverso: rgb(245, 245, 245);
+  --destaque :rgb(209, 91, 148);
+  --destaque-inverso :rgb(180, 215, 230);
+  --fundo-card : rgb(247, 198, 217);
+
+}
+
+body{
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+  background-color: var(--fundo-principal);
+  color: var(--texto);
+
+}
+
+header{
+  background-color: var(--destaque);
+  color: var(--texto);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+nav#menu > ul{
+  list-style: none; /*remove bolinhas,numeros e quadrados das listas*/
+  display: flex;
+  gap: 10px;
+
+}
+
+nav#menu a {
+  text-decoration: none;
+  color: var(--texto-inverso);
+  font-weight: 600px; /*grossura da fonte*/
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+
+nav#menu a:hover{
+  background-color: var(--destaque-inverso);
+  color: var(--destaque);
+}
+
