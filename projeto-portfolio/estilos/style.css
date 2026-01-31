@@ -49,7 +49,7 @@ nav#menu > ul{
 nav#menu a {
   text-decoration: none;
   color: var(--texto-inverso);
-  font-weight: 600px; /*grossura da fonte*/
+  font-weight: 600; /*grossura da fonte*/
   padding: 12px 15px;
   border-radius: 5px;
 }
