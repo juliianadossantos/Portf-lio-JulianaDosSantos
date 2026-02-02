@@ -212,6 +212,27 @@ div#social{
       border-radius: 4px;
     }
 
+    #formacao-container{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    #formacao-container .curso{
+      background-color: var(--fundo-principal);
+      border-radius: 8px;
+      border-left: 5px solid var(--destaque-inverso);
+      padding-left: 15px;
+    }
+
+    #formacao-container .curso:hover{
+      border-left-width: 15px;
+      border-color: var(--destaque); 
+      cursor: pointer;
+      transition: 0.5s; /* tempo da transição*/
+      transition:border-color 0.5s; /*tempo da transição DA BORDA*/
+    }
+
 
     @media screen and (min-width:768px){
       #skill-container{
