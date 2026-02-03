@@ -21,12 +21,26 @@
 
 }
 
+body.escuro{
+  --fundo-principal: rgb(18, 16, 24);          /* Roxo quase preto */
+  
+  --texto: rgb(230, 225, 240);                 /* Branco suave */
+  --texto-inverso: rgb(20, 20, 25);            /* Preto suave */
+
+  --destaque: rgb(190, 150, 220);              /* Roxo claro elegante */
+  --destaque-inverso: rgb(120, 95, 160);       /* Roxo azulado */
+
+  --fundo-card: rgb(32, 28, 44);               /* Roxo escuro para cards */
+}
+
 body{
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: color 0.5s;
+
 
 }
 
@@ -101,6 +115,8 @@ div#social{
     margin-top: 20px;
 
   }
+
+  
 
   section#ficha{
     background-color:var(--fundo-card);
@@ -290,11 +306,48 @@ div#social{
       color: var(--destaque-inverso);
     }
 
+    
+    
+
 
     @media screen and (min-width:768px){
+     
+      main {
+        
+        grid-template-columns: auto 300px 1fr auto;
+        max-width: 1200px;
+        margin: auto;
+        
+
+      }
+
+      
+
+      section#ficha{
+        grid-column: 2/3 ;
+        height: fit-content;
+        position: sticky;
+        top:65px
+
+      }
+
+      section#detalhes{
+        grid-column: 3/4 ;
+        min-width: 0;
+        
+        
+        
+
+      }
+
+
+
+
       #skill-container{
         grid-template-columns: 1fr 1fr;
       }
+
+
 
       
 
