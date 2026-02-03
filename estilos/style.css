@@ -37,6 +37,9 @@ header{
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky; /*posição fixa*/
+  top: 0; /*e colada no topo*/
+  z-index: 1; /*posicionando o header acima do vídeo*/
 }
 
 nav#menu > ul{
@@ -269,6 +272,23 @@ div#social{
       margin-bottom: 10px;
     }
 
+    footer{
+      background-color: var(--destaque);
+      color: var(--texto-inverso);
+      text-align: center;
+      padding: 15px;
+
+    }
+
+    footer> a{
+      color: var(--texto-inverso);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer > a:hover{
+      color: var(--destaque-inverso);
+    }
 
 
     @media screen and (min-width:768px){
