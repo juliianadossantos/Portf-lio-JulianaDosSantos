@@ -272,7 +272,7 @@ div#social{
       cursor: pointer;
     }
 
-    #projeto-container > .foto{
+    .projeto> a >.foto{
       width: 100%;
       aspect-ratio: 16/09;
       object-fit: cover;
